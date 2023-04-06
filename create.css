@@ -1,0 +1,99 @@
+
+body {
+    font-family: Gill Sans, sans-serif;
+}
+
+
+/* header CODE */
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #e48b3f;
+    color: white;
+    font-size: 30px;
+}
+
+
+
+/*button*/
+button{
+    padding: 15px 40px;
+    margin-left: 20px;
+
+    background: #e48b3f;
+    border:0;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Gill Sans, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    position: relative;
+    transition:         all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    cursor: pointer;
+    display: block;
+}
+
+button::after,
+button::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition:         all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+button::after{
+    width: 30px;
+    height: 1px;
+    background: white;
+    transform: translateX(-3px);
+    margin-top: 0px;
+}
+
+button::before{
+    content: "";
+    transform: rotate(-135deg) translateX(50%);
+    width: 11px;
+    height: 11px;
+    background: transparent;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-top: -1px;
+}
+
+
+button:hover{
+    padding: 15px 60px 15px 20px;
+}
+
+button:hover::after,
+button:hover::before{
+    opacity: 1;
+    right: 15px;
+}
+/*formstyle*/
+.data{
+    margin-left: 20px;
+
+}
+
+.field, control, input, label{
+    font-size: 20px;
+    top: 400px;
+    right: 70px;
+    width: 400px;
+}
+
+.form{
+    width: 100%;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type=text],input[type=date],input[type=time],input[type=number] {
+    background-color: #e48b3f;
+    color: white;
+}
